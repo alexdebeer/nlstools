@@ -13,33 +13,57 @@
     <!-- Scripts needed for UI -->
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="http://ninjaui.com/cdn/1.0.1/jquery.ninjaui.min.js"></script>
-    
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <style type="text/css">
+      .box {
+      border: 1px black solid;
+      padding: 0% 4% 5% 10%;
+      align: center;
+      }
+      .chart {
+      align: left;
+      border: 1px black solid;
+      }
+      .graphbox{
+      align: left;
+      width: 320px;
+      height: 230px;
+      margin: 1% 1% 1% 1%;
+      border: 1px black solid;
+      }
+
+    </style>
     
   </head>
   <body>
     <script src="Controls.js"></script>
+    <script src="NLSControl.js"></script>
 
     <div class="container">
       <div class="row-fluid">
-	<div class="span4">
-	  <h3> Buttons </h3>
-	  <div class="container">
-	    <div class="row-fluid">
-	      <div class="span1">
-		<div id="PPP"></div>
-	      </div>
-	      <div class="span1">
-		<div id="SSP"></div>
-	      </div>
-	    </div>
-	  </div>
+	<div class="span6 box">
+	  <h3>Particle</h3>
+	  <div id="Radius"></div>
+	  <div id="TiltAngle"></div>
 	</div>
-	<div class="span4">
-	  <h3> Sliders </h3>
+	<div class="span6 box">
+	  <h3>Setup</h3>
+	  <div id="Lambda1"></div>
+	  <div id="Lambda2"></div>
+	  <div id="OpeningAngle"></div>
+	</div>
+	<div class="span6 box">
+	  <h3> Surface </h3>
 	  <div id="but2"></div>
 	</div>
-	<div class="span2">
-	  <div id="but3"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row-fluid">
+	<div class="span6 chart">
+	  <div class="row-fluid">
+	    <div id="Graph" class="span12 graphbox"></div>
+	  </div>
 	</div>
       </div>
       </div>
